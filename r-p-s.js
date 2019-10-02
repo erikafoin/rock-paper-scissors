@@ -1,0 +1,1 @@
+import getThrowFromNumber from './get-random-throw.js/;
