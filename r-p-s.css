@@ -1,0 +1,19 @@
+body {
+    background-color: lightblue;
+    font-family: 'Arial Narrow Bold', sans-serif;
+}
+
+h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Bold', sans-serif;
+}
+
+span {
+    padding: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.radio-image {
+    max-block-size: 100px;
+
+}
+
