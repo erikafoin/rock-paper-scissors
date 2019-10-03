@@ -20,7 +20,8 @@ const updateSpans = () => {
     tiesSpan.textContent = tieGames;
 };
 
-
+const selectedRadioButton = document.querySelector('input:checked'); 
+const userSelectedItem = selectedRadioButton.value;
 
 const computerChoice = getRandomThrow();
 
@@ -47,15 +48,11 @@ const checkResults = (userSelectedItem, computerChoice) => {
 
 
 const makeGuess = () => {
-    const userSelectedItem = selectedRadioButton.value;
+    
     totalGames++;
-    const selectedRadioButton = document.querySelector('input:checked'); 
     checkResults(userSelectedItem, computerChoice);
     updateSpans();
-};
 
-
-const updateGames = () => {
     if (checkResults(userSelectedItem, computerChoice) === 'It\'s a tie!') {
         tieGames++;}
     else if (checkResults(userSelectedItem, computerChoice) === 'You won!') {
