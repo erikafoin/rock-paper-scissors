@@ -8,12 +8,23 @@ h1 {
 }
 
 span {
-    padding: 10px;
+    padding: 48px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-.radio-image {
+.option-image {
     max-block-size: 100px;
+}
 
+#play-button {
+    height: 48px;
+    width: 300px;
+    font-family: 'Arial Bold', sans-serif;
+    font-size: 18px;
+}
+
+#rps {
+    position: fixed;
+    opacity: 0;
 }
 
