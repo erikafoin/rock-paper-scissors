@@ -12,6 +12,7 @@ let tieGames = 0;
 let winGames = 0;
 let loseGames = 0;
 
+
 const updateSpans = () => {
     totalSpan.textContent = totalGames;
     winsSpan.textContent = winGames;
@@ -19,7 +20,10 @@ const updateSpans = () => {
     tiesSpan.textContent = tieGames;
 };
 
+
+
 const computerChoice = getRandomThrow();
+
 const checkResults = (userSelectedItem, computerChoice) => {
     if (userSelectedItem === 'rock' && computerChoice === 'rock')
         return 'It\'s a tie!';
@@ -40,21 +44,25 @@ const checkResults = (userSelectedItem, computerChoice) => {
     else if (userSelectedItem === 'scissors' && computerChoice === 'scissors')
         return 'It\'s a tie!';   
 };
-console.log(checkResults('scissors', 'paper'));
+
 
 const makeGuess = () => {
-    const selectedRadioButton = document.querySelector('input:checked');
     const userSelectedItem = selectedRadioButton.value;
     totalGames++;
-}
+    const selectedRadioButton = document.querySelector('input:checked'); 
+    checkResults(userSelectedItem, computerChoice);
+    updateSpans();
+};
+
 
 const updateGames = () => {
     if (checkResults(userSelectedItem, computerChoice) === 'It\'s a tie!') {
         tieGames++;}
     else if (checkResults(userSelectedItem, computerChoice) === 'You won!') {
         winGames++;}
-    else (checkResults(userSelectedItem, computerChoice) === 'You lost!') {
-        loseGames++;}
+    else if (checkResults(userSelectedItem, computerChoice) === 'You lost!') {
+        loseGames++;
+    } updateSpans();
 };
     
 
