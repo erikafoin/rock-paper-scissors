@@ -40,24 +40,21 @@ const determineWinner = (userSelectedItem, computerChoice) => {
     else if (userSelectedItem === 'scissors' && computerChoice === 'scissors')
         return 'It\'s a tie!';   
 };
-console.log(determineWinner());
+console.log(determineWinner('scissors', 'paper'));
 
 const makeGuess = () => {
     const selectedRadioButton = document.querySelector('input:checked');
-    const userSelectedItem = selectedRadioButton.nodeValue;
+    const userSelectedItem = selectedRadioButton.value;
+    
     totalGames++;
-
-   
-    const won = userWon(userSelectedItem, computerChoice);
-    const tie = userTied(userSelectedItem,computerChoice);
-    const lose = userLost(userSelectedItem, computerChoice);
+}
 
     const updateGames = () => {
-        if (won)
-            winGames++;
-        else if (tied) 
+        if (determineWinner(userSelectedItem, computerChoice) === 'It\'s a tie!') {
             tieGames++;
-        else if (lose) 
+        else if (determineWinner(userSelectedItem, computerChoice) === 'You won!') {
+            winGames++;
+        else if (determineWinner(userSelectedItem, computerChoice) === 'You lost!') {
             loseGames++;
     };
 
@@ -67,4 +64,4 @@ const makeGuess = () => {
 
 
     playButton.addEventListener('click', makeGuess);
-}
+};
