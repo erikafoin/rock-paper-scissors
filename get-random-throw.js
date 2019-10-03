@@ -1,19 +1,21 @@
 
-const rockValue = 0;
-const paperValue = 1;
-const scissorsValue = 2;
+const getOneTwoThree = () => {
 
-const getOneTwoThree = () => Math.floor(Math.random() * Math.floor(3));
+    return Math.floor(Math.random() * Math.floor(3));
+};
+
 
 
 const getRandomThrow = () => {
-    if (getOneTwoThree() === 0) {
+    const myRandomNumber = getOneTwoThree();
+    if (myRandomNumber === 0) 
         return 'rock';
-    } 
+    else if (myRandomNumber === 1) 
+        return 'paper';
+    else if (myRandomNumber === 2) 
+        return 'scissors';
 };
-console.log(getRandomThrow());
- 
 
- 
+console.log('identification of rockpaperscissors', getRandomThrow());
 
 export default getRandomThrow;

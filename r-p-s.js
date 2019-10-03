@@ -23,12 +23,23 @@ const updateSpans = () => {
 const makeGuess = () => {
     const selectedRadioButton = document.querySelector('input:checked');
     const userSelectedItem = selectedRadioButton.nodeValue;
-    //make changes to state and dom...
     totalGames++;
 
+    const computerChoice = getRandomThrow();
+    const won = userWon(userSelectedItem, computerChoice);
+    const tie = userTied(userSelectedItem,computerChoice);
+    const lose = userLost(userSelectedItem, computerChoice);
 
+    if (won) {
+        winGames++;
+    else (tied)
+        tieGames++;
+    else (lose)
+        loseGames;
+
+    resultSpan.textContent = getRandomThrow;
     
-updateSpans();
+    updateSpans();
 };
 
 playButton.addEventListener('click', makeGuess);
