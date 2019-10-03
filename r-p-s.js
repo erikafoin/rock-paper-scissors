@@ -1,4 +1,4 @@
-import getRandomThrow from './get-random-throw.js/';
+import getRandomThrow from './get-random-throw.js';
 
 const playButton = document.getElementById('play-button');
 const summarySpan = document.getElementById('summary');
@@ -28,6 +28,7 @@ const makeGuess = () => {
 
 
     
+updateSpans();
+};
 
-}
 playButton.addEventListener('click', makeGuess);

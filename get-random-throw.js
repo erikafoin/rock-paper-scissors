@@ -2,20 +2,18 @@
 const rockValue = 0;
 const paperValue = 1;
 const scissorsValue = 2;
-  
 
-const getRandomThrow = (getOneTwoThree) => {
-    if (getOneTwoThree === 0) {"rock"
-    } else if {
-        (getOneTwoThree === 1) {"paper";
-    } else if {
-        (getOneTwoThree === 2) {"scissors";
-    }
-}
+const getOneTwoThree = () => Math.floor(Math.random() * Math.floor(3));
 
-    const getOneTwoThree = () => Math.floor(Math.random() * Math.floor(3));
 
-    console.log(getOneTwoThree);
+const getRandomThrow = () => {
+    if (getOneTwoThree() === 0) {
+        return 'rock';
+    } 
+};
+console.log(getRandomThrow());
+ 
 
+ 
 
 export default getRandomThrow;
