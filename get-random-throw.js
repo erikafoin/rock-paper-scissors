@@ -5,12 +5,13 @@ const scissorsValue = 2;
   
 
 const getRandomThrow = (getOneTwoThree) => {
-        if (getOneTwoThree === 0) return 'rock';
+    if (getOneTwoThree === 0) {"rock"
     } else if {
-        (getOneTwoThree === 1) return 'paper';
+        (getOneTwoThree === 1) {"paper";
     } else if {
-        (getOneTwoThree === 2) return 'scissors';
-    };
+        (getOneTwoThree === 2) {"scissors";
+    }
+}
 
     const getOneTwoThree = () => Math.floor(Math.random() * Math.floor(3));
 

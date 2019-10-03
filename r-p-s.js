@@ -18,6 +18,16 @@ const updateSpans = () => {
     winsSpan.textContent = winGames;
     lossesSpan.textContent = loseGames;
     tiesSpan.textContent = tieGames;
-}
+};
 
+const makeGuess = () => {
+    const selectedRadioButton = document.querySelector('input:checked');
+    const userSelectedItem = selectedRadioButton.nodeValue;
+    //make changes to state and dom...
+    totalGames++;
+
+
+    
+
+}
 playButton.addEventListener('click', makeGuess);
