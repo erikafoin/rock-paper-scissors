@@ -1,10 +1,6 @@
 
-const getOneTwoThree = () => {
-    return Math.floor(Math.random() * Math.floor(3));
-};
-
 export const getRandomThrow = () => {
-    const myRandomNumber = getOneTwoThree();
+    let myRandomNumber = (Math.floor(Math.random() * 3));
     if (myRandomNumber === 0)
         return 'rock';
     else if (myRandomNumber === 1)
@@ -13,6 +9,6 @@ export const getRandomThrow = () => {
         return 'scissors';
 };
 
-// console.log('identification of rockpaperscissors', getRandomThrow());
+
 
 

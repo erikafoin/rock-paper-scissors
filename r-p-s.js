@@ -10,6 +10,7 @@ const tiesSpan = document.getElementById('ties');
 const choiceSpan = document.getElementById('choice');
 
 let totalGames = 0;
+let result = '';
 let tieGames = 0;
 let winGames = 0;
 let loseGames = 0;
@@ -29,23 +30,24 @@ const makeGuess = () => {
     choiceSpan.textContent = userSelectedItem;
     totalGames++;
     let computerChoice = getRandomThrow();
-    const resultsString = checkResults(userSelectedItem, computerChoice);
+    result = checkResults(userSelectedItem, computerChoice);
+    resultSpan.textContent = computerChoice;
 
-    if (resultsString === 'draw') {
+    if (result === 'draw') {
         tieGames++;
     }
-    else if (resultsString === 'win') {
+    else if (result === 'win') {
         console.log('win');
         winGames++;
         console.log(winGames);
     }
-    else if (resultsString === 'lose') {
+    else if (result === 'lose') {
         loseGames++;
     }
     updateSpans();
 };
 
 
-resultSpan.textContent = getRandomThrow();
-updateSpans();
+
+//updateSpans();
 playButton.addEventListener('click', makeGuess);
