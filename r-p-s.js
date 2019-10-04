@@ -28,16 +28,17 @@ const computerChoice = getRandomThrow();
 
 const makeGuess = () => {
     totalGames++;
-    checkResults(userSelectedItem, computerChoice);
-    updateSpans();
+    const resultsString = checkResults(userSelectedItem, computerChoice);
 
-    if (checkResults(userSelectedItem, computerChoice) === 'It\'s a tie!') {
+    if (resultsString === 'It\'s a tie!') {
         tieGames++;
     }
-    else if (checkResults(userSelectedItem, computerChoice) === 'You won!') {
+    else if (resultsString === 'You win!') {
+        console.log('win');
         winGames++;
+        console.log(winGames);
     }
-    else if (checkResults(userSelectedItem, computerChoice) === 'You lost!') {
+    else if (resultsString === 'You lost!') {
         loseGames++;
     }
     updateSpans();
