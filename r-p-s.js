@@ -21,8 +21,6 @@ const updateSpans = () => {
     tiesSpan.textContent = tieGames;
 };
 
-const selectedRadioButton = document.querySelector('input:checked');
-const userSelectedItem = selectedRadioButton.value;
 
 const computerChoice = getRandomThrow();
 
@@ -48,3 +46,31 @@ const makeGuess = () => {
 resultSpan.textContent = getRandomThrow();
 updateSpans();
 playButton.addEventListener('click', makeGuess);
+
+const RPS = getRandomThrow();
+const selectedRadioButton = document.querySelector('input:checked');
+const userSelectedItem = selectedRadioButton.value;
+
+const won = 
+/*const side = flipCoin();
+
+    coinImage.classList.remove('invisible');
+    const src = 'assets/sides/' + side + '.jpg';
+    coinImage.src = src;
+
+    const sideButton = document.querySelector('input:checked');
+
+
+    const won = sideButton.value === side;
+
+    if (won) {
+        message.textContent = 'You Won!';
+        wins++;
+        winCount.textContent = wins;
+    }
+    else {
+        message.textContent = 'You Lost!';
+        losses++;
+        lossCount.textContent = losses;
+    }
+});*/
