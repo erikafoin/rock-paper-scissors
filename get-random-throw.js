@@ -3,7 +3,7 @@ const getOneTwoThree = () => {
     return Math.floor(Math.random() * Math.floor(3));
 };
 
-const getRandomThrow = () => {
+export const getRandomThrow = () => {
     const myRandomNumber = getOneTwoThree();
     if (myRandomNumber === 0)
         return 'rock';
@@ -15,4 +15,4 @@ const getRandomThrow = () => {
 
 // console.log('identification of rockpaperscissors', getRandomThrow());
 
-export default getRandomThrow;
+
