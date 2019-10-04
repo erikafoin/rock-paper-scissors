@@ -20,11 +20,11 @@ span {
     height: 48px;
     width: 300px;
     font-family: 'Arial Bold', sans-serif;
-    font-size: 18px;
+	font-size: 18px;
+	margin: 2rem;
 }
 
 #rps {
     position: fixed;
     opacity: 0;
 }
-
