@@ -14,7 +14,7 @@ test('Returns win for player rock, computer scissors', function(assert) {
     const resultCheck = checkResults(player, computer);
     //Assert
     // Make assertions about what is expected valid result
-    assert.equal(resultCheck, 'You win!');
+    assert.equal(resultCheck, 'win');
 });
 
 test('Returns win for player scissors, computer paper', function(assert) {
@@ -27,7 +27,7 @@ test('Returns win for player scissors, computer paper', function(assert) {
     const resultCheck = checkResults(player, computer);
     //Assert
     // Make assertions about what is expected valid result
-    assert.equal(resultCheck, 'You win!');
+    assert.equal(resultCheck, 'win');
 });
 
 test('Returns win for player scissors, computer paper', function(assert) {
@@ -40,7 +40,7 @@ test('Returns win for player scissors, computer paper', function(assert) {
     const resultCheck = checkResults(player, computer);
     //Assert
     // Make assertions about what is expected valid result
-    assert.equal(resultCheck, 'You win!');
+    assert.equal(resultCheck, 'win');
 });
 
 test('Returns lose for player rock, computer paper', function(assert) {
@@ -53,7 +53,7 @@ test('Returns lose for player rock, computer paper', function(assert) {
     const resultCheck = checkResults(player, computer);
     //Assert
     // Make assertions about what is expected valid result
-    assert.equal(resultCheck, 'You lose!');
+    assert.equal(resultCheck, 'lose');
 });
 
 test('Returns lose for player scissors, computer rock', function(assert) {
@@ -66,7 +66,7 @@ test('Returns lose for player scissors, computer rock', function(assert) {
     const resultCheck = checkResults(player, computer);
     //Assert
     // Make assertions about what is expected valid result
-    assert.equal(resultCheck, 'You lose!');
+    assert.equal(resultCheck, 'lose');
 });
 
 test('Returns lose for player rock, computer paper', function(assert) {
@@ -79,7 +79,7 @@ test('Returns lose for player rock, computer paper', function(assert) {
     const resultCheck = checkResults(player, computer);
     //Assert
     // Make assertions about what is expected valid result
-    assert.equal(resultCheck, 'You lose!');
+    assert.equal(resultCheck, 'lose');
 });
 test('Returns draw for player & computer both rock', function(assert) {
     //Arrange
@@ -91,7 +91,7 @@ test('Returns draw for player & computer both rock', function(assert) {
     const resultCheck = checkResults(player, computer);
     //Assert
     // Make assertions about what is expected valid result
-    assert.equal(resultCheck, 'It\'s a tie!');
+    assert.equal(resultCheck, 'draw');
 });
 test('Returns draw for player & computer both paper', function(assert) {
     //Arrange
@@ -103,7 +103,7 @@ test('Returns draw for player & computer both paper', function(assert) {
     const resultCheck = checkResults(player, computer);
     //Assert
     // Make assertions about what is expected valid result
-    assert.equal(resultCheck, 'It\'s a tie!');
+    assert.equal(resultCheck, 'draw');
 });
 test('Returns draw for player & computer both scissors', function(assert) {
     //Arrange
@@ -115,5 +115,5 @@ test('Returns draw for player & computer both scissors', function(assert) {
     const resultCheck = checkResults(player, computer);
     //Assert
     // Make assertions about what is expected valid result
-    assert.equal(resultCheck, 'It\'s a tie!');
+    assert.equal(resultCheck, 'draw');
 });
