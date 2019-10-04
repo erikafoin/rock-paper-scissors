@@ -1,21 +1,18 @@
 
 const getOneTwoThree = () => {
-
     return Math.floor(Math.random() * Math.floor(3));
 };
 
-
-
 const getRandomThrow = () => {
     const myRandomNumber = getOneTwoThree();
-    if (myRandomNumber === 0) 
+    if (myRandomNumber === 0)
         return 'rock';
-    else if (myRandomNumber === 1) 
+    else if (myRandomNumber === 1)
         return 'paper';
-    else if (myRandomNumber === 2) 
+    else if (myRandomNumber === 2)
         return 'scissors';
 };
 
-console.log('identification of rockpaperscissors', getRandomThrow());
+// console.log('identification of rockpaperscissors', getRandomThrow());
 
 export default getRandomThrow;
