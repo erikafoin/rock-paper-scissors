@@ -37,9 +37,7 @@ const makeGuess = () => {
         tieGames++;
     }
     else if (result === 'win') {
-        console.log('win');
         winGames++;
-        console.log(winGames);
     }
     else if (result === 'lose') {
         loseGames++;
