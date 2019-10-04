@@ -12,6 +12,10 @@ span {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
+button:hover {
+	cursor: pointer;
+}
+
 .option-image {
     max-block-size: 100px;
 }
