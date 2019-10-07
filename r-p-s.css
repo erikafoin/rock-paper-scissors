@@ -8,9 +8,7 @@ h1 {
 }
 
 span {
-    padding: 48px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    text-align: right;
 }
 
 button:hover {
