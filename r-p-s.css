@@ -10,6 +10,7 @@ h1 {
 span {
     padding: 48px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: right;
 }
 
 button:hover {
@@ -31,4 +32,17 @@ button:hover {
 #rps {
     position: fixed;
     opacity: 0;
+}
+
+.option-image {
+    margin: 15px;
+}
+
+input:checked + .option-image {
+    border: 5px solid blue;
+    padding: 10px;
+}
+
+[type=radio] {
+    display:none;
 }
